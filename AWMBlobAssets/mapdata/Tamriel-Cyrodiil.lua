@@ -1,7 +1,7 @@
 local theme = AWMBlobAssets
 local maps = theme.maps
 local tamriel = maps[27]
-local prefix = theme.name
+local prefix = theme.prefix
 
 
 -------------------

@@ -2,7 +2,7 @@ local theme = AWMBlobAssets
 local maps = theme.maps
 
 local aurbis = maps[439]
-local prefix = theme.name
+local prefix = theme.prefix
 
 -------------
 -- Tamriel --

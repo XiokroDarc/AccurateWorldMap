@@ -1,5 +1,6 @@
 AWMBlobAssets = {
   name = "AWMBlobAssets",
+  prefix = "AWMBlobAssets",
   dependencies = { LibMapThemer_PoiData, LibMapThemer_RenameData },
   maps = { },
 }

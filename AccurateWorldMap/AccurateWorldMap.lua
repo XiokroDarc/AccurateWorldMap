@@ -49,6 +49,13 @@ local optionsData = {
    },
    {
       type = "checkbox",
+      name = "Disable Renames",
+      tooltip = "Disables renaming of zones",
+      getFunc = function() return LMT:GetOptions().disableRenames end,
+      setFunc = function(value) LMT:GetOptions().disableRenames = value end
+   },
+   {
+      type = "checkbox",
       name = "Disable POI Glow",
       tooltip = "Disables glow around POI",
       getFunc = function() return LMT:GetOptions().pois.disableGlow end,
@@ -142,8 +149,12 @@ EVENT_MANAGER:RegisterForEvent(theme.name, EVENT_ADD_ON_LOADED, function (_, add
 end)
 
 CALLBACK_MANAGER:RegisterCallback("OnWorldMapChanged", function()
+   local theme = LMT:GetCurrentTheme()
+   if (theme) then theme:DisableRenames(LMT:GetOptions().disableRenames) end
+
    local map = LMT:GetCurrentMap()
-   if (not map) then return end
-   if (map:GetMapId() == 27) then map:SetZoneNameVisibility(LMT:GetOptions().showTamrielZoneNames) end
-   if (map:GetMapId() == 439) then map:SetZoneNameVisibility(LMT:GetOptions().showAurbisZoneNames) end
+   if (map) then 
+      if (map:GetMapId() == 27) then map:SetZoneNameVisibility(LMT:GetOptions().showTamrielZoneNames) end
+      if (map:GetMapId() == 439) then map:SetZoneNameVisibility(LMT:GetOptions().showAurbisZoneNames) end
+   end
 end)
