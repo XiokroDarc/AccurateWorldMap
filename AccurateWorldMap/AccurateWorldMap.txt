@@ -3,13 +3,12 @@
 ;All rights reserved.
 
 
-## Title: Accurate World Map  |t32:32:AccurateWorldMap/misc/map.dds|t
+## Title: Accurate World Map |t32:32:AccurateWorldMap/misc/map.dds|t
 ## Description: Accurate World Map replaces the in-game world maps with higher quality and more lore accurate ones.
 ## Author: |C8587FF@Thal-J|r (EU) & |C42ffbd@Vylaera|r (NA)  
 ## DependsOn: AWMBlobAssets
 ## Version: 23.10.01
 ## APIVersion: 101038
-## SavedVariables: AccurateWorldMapVars
 
 Theme.lua
 AccurateWorldMap.lua
