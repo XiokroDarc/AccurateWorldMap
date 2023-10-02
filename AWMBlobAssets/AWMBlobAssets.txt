@@ -1,0 +1,19 @@
+;This Add-on is not created by, affiliated with or sponsored by ZeniMax Media Inc. or its affiliates.
+;The Elder Scrolls® and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the United States and/or other countries.
+;All rights reserved.
+;|t32:32:ABetterWorldMap/misc/map.dds|t
+
+## Title: AWMBlobAssets
+## Description: Blob Assets for AccurateWorldMap
+## Author: |C8587FF@XiokroDarc|r (NA) & |C42ffbd@Vylaera|r (NA)
+## Version: 23.10.01
+## APIVersion: 101038
+## DependsOn: LibMapThemer
+## IsLibrary: true
+
+AWMBlobAssets.lua
+mapdata/Aurbis.lua
+mapdata/Tamriel-Aldmeri.lua
+mapdata/Tamriel-Cyrodiil.lua
+mapdata/Tamriel-Ebonheart.lua
+mapdata/Tamriel-Daggerfall.lua
