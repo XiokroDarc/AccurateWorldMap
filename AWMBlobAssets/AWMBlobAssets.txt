@@ -5,7 +5,7 @@
 
 ## Title: AWMBlobAssets
 ## Description: Blob Assets for AccurateWorldMap
-## Author: |C8587FF@XiokroDarc|r (NA) & |C42ffbd@Vylaera|r (NA)
+## Author: |C7851A9@XiokroDarc|r (NA) & |C42ffbd@Vylaera|r (NA)
 ## Version: 23.10.01
 ## APIVersion: 101038
 ## DependsOn: LibMapThemer
