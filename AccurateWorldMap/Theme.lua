@@ -2,7 +2,7 @@ local LMT = LibMapThemer
 
 AccurateWorldMap = {
    name = "AccurateWorldMap",
-   prefix = "AccurateWorldMap",
+   prefix = "AccurateWorldMap/AccurateWorldMap",
    dependencies = { AWMBlobAssets },
    maps = { },
    renames = { },
