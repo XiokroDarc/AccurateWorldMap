@@ -13,12 +13,10 @@ local prefix = theme.prefix
 local maps = theme.maps
 local renames = theme.renames
 
-renames["Northern Elsweyr"]   = "Anequina"
-renames["Southern Elsweyr"]   = "Pellitine"
-renames["Telvanni Peninsula"] = "Indoril \nHighlands"
+LMT:CreateRename(renames, "Northern Elsweyr", "Anequina")
+LMT:CreateRename(renames, "Southern Elsweyr", "Pellitine")
+LMT:CreateRename(renames, "Telvanni Peninsula", "Indoril \nHighlands")
  
 maps[439] = { tilePath = prefix.."/tiles/aurbis/Aurbis_", }
  
 maps[27] = { tilePath = prefix.."/tiles/tamriel/Tamriel_", maxZoom = 12, }
-
-LMT:LoadTheme(AccurateWorldMap)
