@@ -1,14 +1,16 @@
 local LMT = LibMapThemer
 
-AccurateWorldMap = {
-   name = "AccurateWorldMap",
+local themeName = "AccurateWorldMap"
+
+_G[themeName] = {
+   name = themeName,
    prefix = "AccurateWorldMap/AccurateWorldMap",
    dependencies = { AWMBlobAssets },
    maps = { },
    renames = { },
 }
  
-local theme = AccurateWorldMap
+local theme = _G[themeName]
 local prefix = theme.prefix
 local maps = theme.maps
 local renames = theme.renames

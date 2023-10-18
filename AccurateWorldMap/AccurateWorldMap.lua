@@ -1,7 +1,8 @@
 --local LMT = LibMapThemer
 local LAM = LibAddonMenu2
 --local theme = AccurateWorldMap
-local theme = LibMapThemer:LoadTheme(AccurateWorldMap)
+local themeName = "AccurateWorldMap"
+local theme = LibMapThemer:LoadTheme(_G[themeName])
 local panelName = "AccurateWorldMap_Settings"
 
 local panelData = {
@@ -29,7 +30,7 @@ local optionsData = {
       name = "Map Theme",
       tooltip = "Choose the map theme.",
       warning = "Disable theme before uninstalling",
-      choices = LibMapThemer:GetThemesWithDependency("AccurateWorldMap"),
+      choices = LibMapThemer:GetThemesWithDependency(themeName),
       getFunc = function() return LibMapThemer:GetCurrentThemeName() end,
       setFunc = function(value) LibMapThemer:SetCurrentThemeByName(value) end,
    },
