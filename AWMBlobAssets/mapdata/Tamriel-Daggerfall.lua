@@ -10,10 +10,12 @@ local prefix = theme.prefix
 -----------------
 -- Stros M'kai --
 tamriel.zones[201] = {
+   faction = "DC",
+   storyIndex = 1,
    textureFile = prefix.."/blobs/daggerfall/blob-strosmkai.dds",
    bounds = { xN = 0.201416, yN = 0.532592, widthN = 0.024536, heightN = 0.024536, },
    --offsets = { xN = 0.01159, }, -- TODO might need to be negative
-   data = { 
+   hitbox = { 
       { xN = 0.1760, yN = 0.1024, },
       { xN = 0.0333, yN = 0.2904, },
       { xN = 0.0622, yN = 0.6642, },
@@ -27,9 +29,11 @@ tamriel.zones[201] = {
 -------------
 -- Betnikh --
 tamriel.zones[227] = {
+   faction = "DC",
+   storyIndex = 2,
    textureFile = prefix.."/blobs/daggerfall/blob-betnikh.dds",
    bounds = { xN = 0.1156, yN = 0.43847, widthN = 0.02722, heightN = 0.02722 },
-   data = {
+   hitbox = {
       { xN = 0.6750, yN = 0.0918, },
       { xN = 0.1506, yN = 0.2935, },
       { xN = 0.0937, yN = 0.6470, },
@@ -47,9 +51,11 @@ tamriel.zones[227] = {
 ---------------
 -- Glenumbra --
 tamriel.zones[1] = {
+   faction = "DC",
+   storyIndex = 3,
    textureFile = prefix.."/blobs/daggerfall/blob-glenumbra.dds",
    bounds = { xN = 0.09399, yN = 0.29895, widthN = 0.14013, heightN = 0.14013, },
-   data = {
+   hitbox = {
       { xN = 0.5936, yN = 0.0432, },
       { xN = 0.5376, yN = 0.1837, },
       { xN = 0.4779, yN = 0.2422, },
@@ -112,9 +118,11 @@ tamriel.zones[1] = {
 ----------------
 -- Stormhaven --
 tamriel.zones[12] = {
+   faction = "DC",
+   storyIndex = 4,
    textureFile = prefix.."/blobs/daggerfall/blob-stormhaven.dds",
    bounds = { xN = 0.19995, yN = 0.27954, widthN = 0.133, heightN = 0.133, },
-   data = {
+   hitbox = {
       { xN = 0.1507, yN = 0.1749, },
       { xN = 0.1121, yN = 0.1981, },
       { xN = 0.1052, yN = 0.2377, },
@@ -175,10 +183,12 @@ tamriel.zones[12] = {
 ----------------
 -- Rivenspire --
 tamriel.zones[10] = {
+   faction = "DC",
+   storyIndex = 5,
    textureFile = prefix.."/blobs/daggerfall/blob-rivenspire.dds",
    bounds = { xN = 0.1726, yN = 0.21875, widthN = 0.10852, heightN = 0.10852,  },
    offsets = { xN = 0.01135, },
-   data = { 
+   hitbox = { 
       { xN = 0.0445, yN = 0.7932, },
       { xN = 0.0718, yN = 0.8301, },
       { xN = 0.1409, yN = 0.8446, },
@@ -223,9 +233,11 @@ tamriel.zones[10] = {
 -------------------
 -- Alik'r Desert --
 tamriel.zones[30] = {
+   faction = "DC",
+   storyIndex = 6,
    textureFile = prefix.."/blobs/daggerfall/blob-thealikr.dds",
    bounds = { xN = 0.1621, yN = 0.33666, widthN = 0.15, heightN = 0.15, },
-   data = { 
+   hitbox = { 
       { xN = 0.0825, yN = 0.5730, },
       { xN = 0.1046, yN = 0.6035, },
       { xN = 0.1724, yN = 0.6294, },
@@ -290,9 +302,11 @@ tamriel.zones[30] = {
 ---------------
 -- Bangkorai --
 tamriel.zones[20] = {
+   faction = "DC",
+   storyIndex = 7,
    textureFile = prefix.."/blobs/daggerfall/blob-bangkorai.dds",
    bounds = { xN = 0.2832, yN = 0.29614, widthN = 0.11901, heightN = 0.11901, },
-   data = {
+   hitbox = {
       { xN = 0.6146, yN = 0.0508, },
       { xN = 0.5604, yN = 0.0638, },
       { xN = 0.4932, yN = 0.1027, },
@@ -333,7 +347,7 @@ tamriel.zones[20] = {
 tamriel.zones[1126] = {
    textureFile = prefix.."/blobs/daggerfall/blob-craglorn.dds",
    bounds = { xN = 0.36, yN = 0.308837, widthN = 0.12207, heightN = 0.12207, },
-   data = {
+   hitbox = {
       { xN = 0.1745, yN = 0.1865, },
       { xN = 0.1515, yN = 0.2175, },
       { xN = 0.1044, yN = 0.3727, },
@@ -363,7 +377,7 @@ tamriel.zones[1126] = {
 tamriel.zones[994] = {
    textureFile = prefix.."/blobs/daggerfall/blob-hewsbane.dds",
    bounds = { xN = 0.25683, yN = 0.46057, widthN = 0.090332, heightN = 0.090332, },
-   data = {
+   hitbox = {
       { xN = 0.0933, yN = 0.2731, },
       { xN = 0.1089, yN = 0.3667, },
       { xN = 0.1775, yN = 0.4581, },
@@ -412,7 +426,7 @@ tamriel.zones[667] = {
    textureFile = prefix.."/blobs/daggerfall/blob-wrothgar.dds",
    bounds = { xN = 0.23889, yN = 0.207153, widthN = 0.1420898, heightN = 0.1420898, },
    offsets = { xN = 0.007324219, },
-   data = {
+   hitbox = {
       { xN = 0.0130, yN = 0.7156, },
       { xN = 0.0982, yN = 0.7526, },
       { xN = 0.1409, yN = 0.8242, },
@@ -486,7 +500,7 @@ tamriel.zones[1864] = {
    nameHidden = true,
    textureFile = prefix.."/blobs/daggerfall/blob-grayhome.dds",
    bounds = { xN = 0.30175, yN = 0.16748, widthN = 0.017578125, heightN = 0.017578125, },
-   data = {
+   hitbox = {
       { xN = 0.4011, yN = 0.0344, },
       { xN = 0.1899, yN = 0.1468, },
       { xN = 0.0833, yN = 0.2460, },
@@ -508,7 +522,7 @@ tamriel.zones[1864] = {
 tamriel.zones[2114] = {
    textureFile = prefix.."/blobs/daggerfall/blob-highisle.dds",
    bounds = { xN = 0.04907, yN = 0.5686, widthN = 0.0325, heightN = 0.03295, },
-   data = {
+   hitbox = {
       { xN = 0.1299, yN = 0.9618, },
       { xN = 0.8673, yN = 0.9383, },
       { xN = 0.9189, yN = 0.9011, },
@@ -534,7 +548,7 @@ tamriel.zones[2212] = {
    nameHidden = true,
    textureFile = prefix.."/blobs/daggerfall/blob-galen.dds",
    bounds = { xN = 0.047363, yN = 0.559326, widthN = 0.02172, heightN = 0.02172, },
-   data = { 
+   hitbox = { 
       { xN = 0.2135, yN = 0.0929, },
       { xN = 0.1273, yN = 0.1732, },
       { xN = 0.0529, yN = 0.3159, },
@@ -557,7 +571,7 @@ tamriel.zones[2143] = {
    nameHidden = true,
    textureFile = prefix.."/blobs/daggerfall/blob-swordsrestisle.dds",
    bounds = { xN = 0.09387, yN = 0.42419, widthN = 0.012329102, heightN = 0.012329102},
-   data = {
+   hitbox = {
       { xN = 0.4815, yN = 0.0905, },
       { xN = 0.1799, yN = 0.2008, },
       { xN = 0.0699, yN = 0.4313, },

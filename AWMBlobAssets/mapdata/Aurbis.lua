@@ -9,7 +9,7 @@ local aurbis = maps[439]
 aurbis.zones[27] = {
    textureFile = prefix.."/blobs/aurbis/blob-tamriel.dds",
    bounds = { xN = 0.2006, yN = 0.2121, widthN = 0.5756, heightN = 0.5756, },
-   data = {
+   hitbox = {
       { xN = 0.264, yN = 0.188 },
       { xN = 0.160, yN = 0.255 },
       { xN = 0.064, yN = 0.371 },
@@ -42,7 +42,7 @@ aurbis.zones[27] = {
 aurbis.zones[255] = {
    textureFile = prefix.."/blobs/aurbis/blob-realm.dds",
    bounds = { xN = 0.0970, yN = 0.2890, widthN = 0.1386, heightN = 0.1386, },
-   data = {
+   hitbox = {
       { xN = 0.473, yN = 0.005 },
       { xN = 0.352, yN = 0.027 },
       { xN = 0.259, yN = 0.067 },
@@ -84,7 +84,7 @@ aurbis.zones[255] = {
 aurbis.zones[1313] = {
    textureFile = prefix.."/blobs/aurbis/blob-realm.dds",
    bounds = { xN = 0.625, yN = 0.140, widthN = 0.1386, heightN = 0.1386, },
-   data = {
+   hitbox = {
       { xN = 0.473, yN = 0.005 },
       { xN = 0.352, yN = 0.027 },
       { xN = 0.259, yN = 0.067 },
@@ -126,7 +126,7 @@ aurbis.zones[1313] = {
 aurbis.zones[1429] = {
    textureFile = prefix.."/blobs/aurbis/blob-realm.dds",
    bounds = { xN = 0.3, yN = 0.757, widthN = 0.1386, heightN = 0.1386, },
-   data = {
+   hitbox = {
       { xN = 0.473, yN = 0.005 },
       { xN = 0.352, yN = 0.027 },
       { xN = 0.259, yN = 0.067 },
@@ -169,7 +169,7 @@ maps[1782] = { parentMapID = 439, }
 aurbis.zones[1782] = {
    textureFile = prefix.."/blobs/aurbis/blob-realm.dds",
    bounds = { xN = 0.355, yN = 0.099, widthN = 0.1386, heightN = 0.1386, },
-   data = {
+   hitbox = {
       { xN = 0.473, yN = 0.005 },
       { xN = 0.352, yN = 0.027 },
       { xN = 0.259, yN = 0.067 },
@@ -211,7 +211,7 @@ aurbis.zones[1782] = {
 aurbis.zones[2021] = {
    textureFile = prefix.."/blobs/aurbis/blob-realm.dds",
    bounds = { xN = 0.653, yN = 0.720, widthN = 0.1386, heightN = 0.1386, },
-   data = {
+   hitbox = {
       { xN = 0.473, yN = 0.005 },
       { xN = 0.352, yN = 0.027 },
       { xN = 0.259, yN = 0.067 },
@@ -253,7 +253,7 @@ aurbis.zones[2021] = {
 aurbis.zones[2119] = {
    textureFile = prefix.."/blobs/aurbis/blob-realm.dds",
    bounds = { xN = 0.768, yN = 0.583, widthN = 0.1386, heightN = 0.1386, },
-   data = {
+   hitbox = {
       { xN = 0.473, yN = 0.005 },
       { xN = 0.352, yN = 0.027 },
       { xN = 0.259, yN = 0.067 },
@@ -295,7 +295,7 @@ aurbis.zones[2119] = {
 aurbis.zones[2275] = {
    textureFile = prefix.."/blobs/aurbis/blob-realm.dds",
    bounds = { xN = 0.7778, yN = 0.3437, widthN = 0.1386, heightN = 0.1386, },
-   data = {
+   hitbox = {
       { xN = 0.473, yN = 0.005 },
       { xN = 0.352, yN = 0.027 },
       { xN = 0.259, yN = 0.067 },

@@ -3,8 +3,8 @@ local LAM = LibAddonMenu2
 --local theme = AccurateWorldMap
 local themeName = "AccurateWorldMap"
 local theme = LibMapThemer:LoadTheme(_G[themeName])
-local panelName = "AccurateWorldMap_Settings"
 
+local panelName = "AccurateWorldMap_Settings"
 local panelData = {
    type = "panel",
    name = "Accurate World Map",
@@ -62,7 +62,6 @@ local optionsData = {
       type = "checkbox",
       name = "Zone Story Index",
       tooltip = "Numbers story line zones",
-      disabled = function() return theme:GetOptions().disableRenames end,
       getFunc = function() return theme:GetOptions().storyIndexes end,
       setFunc = function(value) theme:GetOptions().storyIndexes = value end
    },
@@ -72,7 +71,7 @@ local optionsData = {
       type = "dropdown",
       name = "Font Style",
       tooltip = "Theme Font Style",
-      choices = LibMapThemer:GetValidFonts(),
+      choices = LibMapThemer:GetZosFonts(),
       getFunc = function() return theme:GetOptions().fontName end,
       setFunc = function(value) theme:GetOptions().fontName = value end,
    },

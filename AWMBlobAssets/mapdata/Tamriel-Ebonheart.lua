@@ -12,9 +12,11 @@ tamriel.pois[332] = { xN = 0.4694, yN = 0.3552 }   -- Falkreath Hold
 --------------------
 -- Bleakrock Isle --
 tamriel.zones[74] = {
+   faction = "EP",
+   storyIndex = 1,
    textureFile = prefix.."/blobs/ebonheart/blob-bleakrockisle.dds",
    bounds = { xN = 0.63183, yN = 0.23645, widthN = 0.02026, heightN = 0.02026, },
-   data = {
+   hitbox = {
       { xN = 0.5115, yN = 0.0537, },
       { xN = 0.1244, yN = 0.1342, },
       { xN = 0.0439, yN = 0.4677, },
@@ -31,10 +33,12 @@ tamriel.zones[74] = {
 ---------------
 -- Bal Foyen --
 tamriel.zones[75] = {
+   faction = "EP",
+   storyIndex = 2,
    textureFile = prefix.."/blobs/ebonheart/blob-balfoyen.dds",
    bounds = { xN = 0.80786, yN = 0.43212, widthN = 0.02429, heightN = 0.02429, },
    offsets = { xN = 0.001464844, },
-   data = {
+   hitbox = {
       { xN = 0.1318, yN = 0.1411, },
       { xN = 0.0095, yN = 0.5160, },
       { xN = 0.1957, yN = 0.8803, },
@@ -54,9 +58,11 @@ tamriel.zones[75] = {
 ----------------
 -- Stonefalls --
 tamriel.zones[7] = {
+   faction = "EP",
+   storyIndex = 3,
    textureFile = prefix.."/blobs/ebonheart/blob-stonefalls.dds",
    bounds = { xN = 0.6866, yN = 0.3862, widthN = 0.126586, heightN = 0.126586, },
-   data = {
+   hitbox = {
       { xN = 0.1894, yN = 0.1431, },
       { xN = 0.0963, yN = 0.1908, },
       { xN = 0.0620, yN = 0.3537, },
@@ -121,9 +127,11 @@ tamriel.zones[7] = {
 -------------
 -- Deshaan --
 tamriel.zones[13] = {
+   faction = "EP",
+   storyIndex = 4,
    textureFile = prefix.."/blobs/ebonheart/blob-deshaan.dds",
    bounds = { xN = 0.716186, yN = 0.4359, widthN = 0.14526, heightN = 0.14526, },
-   data = {
+   hitbox = {
       { xN = 0.0193, yN = 0.3963, },
       { xN = 0.0018, yN = 0.4453, },
       { xN = 0.0056, yN = 0.5546, },
@@ -164,9 +172,11 @@ tamriel.zones[13] = {
 ---------------
 -- Shadowfen --
 tamriel.zones[26] = {
+   faction = "EP",
+   storyIndex = 5,
    textureFile = prefix.."/blobs/ebonheart/blob-shadowfen.dds",
    bounds = { xN = 0.70214, yN = 0.5487, widthN = 0.11767, heightN = 0.11767, },
-   data = {
+   hitbox = {
       { xN = 0.1630, yN = 0.1468, },
       { xN = 0.1463, yN = 0.1611, },
       { xN = 0.1177, yN = 0.2458, },
@@ -210,9 +220,11 @@ tamriel.zones[26] = {
 ---------------
 -- Eastmarch --
 tamriel.zones[61] = {
+   faction = "EP",
+   storyIndex = 6,
    textureFile = prefix.."/blobs/ebonheart/blob-eastmarch.dds",
    bounds = { xN = 0.5344, yN = 0.2423, widthN = 0.143676, heightN = 0.143676, },
-   data = { 
+   hitbox = { 
       { xN = 0.5522, yN = 0.2153, },
       { xN = 0.5404, yN = 0.2185, },
       { xN = 0.4581, yN = 0.1944, },
@@ -261,11 +273,13 @@ tamriel.zones[61] = {
 --------------
 -- The Rift --
 tamriel.zones[125] = {
+   faction = "EP",
+   storyIndex = 7,
    textureFile = prefix.."/blobs/ebonheart/blob-therift.dds",
    bounds = {  xN = 0.5499, yN = 0.3214, widthN = 0.1154785, heightN = 0.1154785, },
    --bounds = {  xN = 0.52556, yN = 0.2970, },
    offsets = { xN = 0.00244, yN = 0.00244, },
-   data = {
+   hitbox = {
       { xN = 0.0763, yN = 0.1665, },
       { xN = 0.0575, yN = 0.1774, },
       { xN = 0.0228, yN = 0.2605, },
@@ -316,7 +330,7 @@ tamriel.zones[1552] = {
    nameHidden = true,
    textureFile = prefix.."/blobs/ebonheart/blob-swampisland.dds",
    bounds = { xN = 0.802, yN = 0.78088, widthN = 0.01232, heightN = 0.01232, },
-   data = {
+   hitbox = {
       { xN = 0.1655, yN = 0.0209, },
       { xN = 0.0607, yN = 0.0995, },
       { xN = 0.0135, yN = 0.4718, },
@@ -335,7 +349,7 @@ tamriel.zones[1552] = {
 tamriel.zones[1060] = {
    textureFile = prefix.."/blobs/ebonheart/blob-vvardenfell.dds",
    bounds = { xN = 0.651367, yN = 0.23547, widthN = 0.20092, heightN = 0.20092, },
-   data = {
+   hitbox = {
       { xN = 0.3814, yN = 0.0253, },
       { xN = 0.3650, yN = 0.0363, },
       { xN = 0.3191, yN = 0.1019, },
@@ -387,7 +401,7 @@ tamriel.zones[1484] = {
    textureFile = prefix.."/blobs/ebonheart/blob-murkmire.dds",
    bounds = { xN = 0.70532, yN = 0.71777, widthN = 0.08496, heightN = 0.08496 },
    offsets = { xN = 0.000610352 },
-   data = {
+   hitbox = {
       { xN = 0.0023, yN = 0.3110, },
       { xN = 0.0388, yN = 0.3932, },
       { xN = 0.1147, yN = 0.5505, },
@@ -431,7 +445,7 @@ tamriel.zones[1484] = {
 tamriel.zones[1719] = {
    textureFile = prefix.."/blobs/ebonheart/blob-westernskyrim.dds",
    bounds = { xN = 0.3695, yN = 0.17224, widthN = 0.155639, heightN = 0.155639, },
-   data = {
+   hitbox = {
       { xN = 0.0723, yN = 0.2347, },
       { xN = 0.0879, yN = 0.3982, },
       { xN = 0.1271, yN = 0.4464, },
@@ -478,7 +492,7 @@ tamriel.zones[1719] = {
 tamriel.zones[1814] = {
    textureFile = prefix.."/blobs/ebonheart/blob-thereach.dds",
    bounds = { xN = 0.34411, yN = 0.2478, widthN = 0.109375, heightN = 0.109375, },
-   data = {
+   hitbox = {
       { xN = 0.3023, yN = 0.1519, },
       { xN = 0.2433, yN = 0.2597, },
       { xN = 0.2292, yN = 0.3546, },
@@ -539,7 +553,7 @@ tamriel.zones[2274] = {
    textureFile = prefix.."/blobs/ebonheart/blob-necrom.dds",
    bounds = { xN = 0.794555, yN = 0.3413, widthN = 0.131958, heightN = 0.17041, },
    --offsets = { xN = 0.8035, yN = 0.3413, widthN = 0.12268, heightN = 0.17041, },
-   data = {
+   hitbox = {
       { xN = 0.3877, yN = 0.1855, },
       { xN = 0.3590, yN = 0.2085, },
       { xN = 0.3143, yN = 0.2604, },

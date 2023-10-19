@@ -10,9 +10,11 @@ local prefix = theme.prefix
 -----------------------
 -- Khenarthi's Roost --
 tamriel.zones[258] = {
+   faction = "AD",
+   storyIndex = 1,
    textureFile = prefix.."/blobs/aldmeri/blob-khenarthisroost.dds",
    bounds = { xN = 0.52282, yN = 0.767944, widthN = 0.019287, heightN = 0.019287},
-   data = {
+   hitbox = {
       { xN = 0.4921, yN = 0.0060, },
       { xN = 0.1974, yN = 0.2571, },
       { xN = 0.0132, yN = 0.5418, },
@@ -29,9 +31,11 @@ tamriel.zones[258] = {
 -------------
 -- Auridon --
 tamriel.zones[143] = {
+   faction = "AD",
+   storyIndex = 2,
    textureFile = prefix.."/blobs/aldmeri/blob-auridon.dds",
    bounds = { xN = 0.18347, yN = 0.56872, widthN = 0.15905, heightN = 0.15905 },
-   data = { 
+   hitbox = { 
       { xN = 0.2770, yN = 0.0198, },
       { xN = 0.1060, yN = 0.0395, },
       { xN = 0.0962, yN = 0.0516, },
@@ -68,9 +72,11 @@ tamriel.zones[143] = {
 ---------------
 -- Grahtwood --
 tamriel.zones[9] = {
+   faction = "AD",
+   storyIndex = 3,
    textureFile = prefix.."/blobs/aldmeri/blob-grahtwood.dds",
    bounds = { xN = 0.381469, yN = 0.636718, widthN = 0.150634, heightN = 0.150634, },
-   data = {
+   hitbox = {
       { xN = 0.1131, yN = 0.1271, },
       { xN = 0.1699, yN = 0.2361, },
       { xN = 0.1802, yN = 0.2799, },
@@ -131,10 +137,12 @@ tamriel.zones[9] = {
 ----------------
 -- Greenshade --
 tamriel.zones[300] = {
+   faction = "AD",
+   storyIndex = 4,
    description = "",
    textureFile = prefix.."/blobs/aldmeri/blob-greenshade.dds",
    bounds = { xN = 0.31555, yN = 0.63049, widthN = 0.108398, heightN = 0.108398, },
-   data = {
+   hitbox = {
       { xN = 0.2746, yN = 0.0016, },
       { xN = 0.2576, yN = 0.0985, },
       { xN = 0.2267, yN = 0.1432, },
@@ -172,9 +180,11 @@ tamriel.zones[300] = {
 -----------------
 -- Malabal Tor --
 tamriel.zones[22] = {
+   faction = "AD",
+   storyIndex = 5,
    textureFile = prefix.."/blobs/aldmeri/blob-malabaltor.dds",
    bounds = { xN = 0.339477, yN = 0.56, widthN = 0.117675, heightN = 0.117675, },
-   data = {
+   hitbox = {
       { xN = 0.0650, yN = 0.5969, },
       { xN = 0.1067, yN = 0.5993, },
       { xN = 0.1461, yN = 0.6303, },
@@ -217,9 +227,11 @@ tamriel.zones[22] = {
 --------------------
 -- Reaper's March --
 tamriel.zones[256] = {
+   faction = "AD",
+   storyIndex = 6,
    textureFile = prefix.."/blobs/aldmeri/blob-reapersmarch.dds",
    bounds = { xN = 0.4296875, yN = 0.548339, widthN = 0.114257, heightN = 0.114257, },
-   data = {
+   hitbox = {
       { xN = 0.1550, yN = 0.1873, },
       { xN = 0.1730, yN = 0.2484, },
       { xN = 0.1320, yN = 0.3424, },
@@ -285,7 +297,7 @@ tamriel.zones[1056] = {
    textureFile = prefix.."/blobs/ebonheart/blob-jerallmountains.dds",
    bounds = { xN = 0.61584, yN = 0.40026, widthN = 0.01232, heightN = 0.01232, },
    offsets = { yN = 0.00061 },
-   data = {
+   hitbox = {
       { xN = 0.6880, yN = 0.0193, },
       { xN = 0.5098, yN = 0.0560, },
       { xN = 0.4101, yN = 0.2447, },
@@ -312,7 +324,7 @@ tamriel.zones[1056] = {
 tamriel.zones[1349] = {
    textureFile = prefix.."/blobs/aldmeri/blob-summersetisle.dds",
    bounds = { xN = 0.0646972, yN = 0.571166, widthN = 0.2668457, heightN = 0.2668457, },
-   data = {
+   hitbox = {
       { xN = 0.4343, yN = 0.0875, },
       { xN = 0.3197, yN = 0.1369, },
       { xN = 0.2555, yN = 0.2473, },
@@ -372,7 +384,7 @@ tamriel.zones[1555] = {
    textureFile = prefix.."/blobs/aldmeri/blob-northernelsweyr.dds",
    bounds = { xN = 0.477416, yN = 0.58776, widthN = 0.132812, heightN = 0.132812, },
    offsets = { xN = 0.006591 },
-   data = {
+   hitbox = {
       { xN = 0.3986, yN = 0.0969, },
       { xN = 0.2857, yN = 0.1560, },
       { xN = 0.2004, yN = 0.3201, },
@@ -415,7 +427,7 @@ tamriel.zones[1588] = {
    textureFile = prefix.."/blobs/aldmeri/blob-hallsofcolossus.dds",
    bounds = { xN = 0.5194, yN = 0.74072, widthN = 0.015747, heightN = 0.015747, },
    offsets = { xN = 0.003051758, yN = 0.00402832, widthN = 0.005981445, heightN = 0.005981445, },
-   data = {
+   hitbox = {
       { xN = 0.2598, yN = 0.1154, },
       { xN = 0.0517, yN = 0.5998, },
       { xN = 0.0640, yN = 0.8254, },
@@ -452,7 +464,7 @@ tamriel.zones[1654] = {
    textureFile = prefix.."/blobs/aldmeri/blob-southernelsweyr.dds",
    bounds = { xN = 0.50244, yN = 0.66833, widthN = 0.12878, heightN = 0.12878, },
    offsets = { xN = 0.0128, yN = 0.008, }, -- Mr Bond
-   data = { 
+   hitbox = { 
       { xN = 0.0338, yN = 0.2343, },
       { xN = 0.1254, yN = 0.4359, },
       { xN = 0.1047, yN = 0.4784, },

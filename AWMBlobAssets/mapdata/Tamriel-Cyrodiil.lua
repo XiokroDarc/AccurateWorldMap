@@ -14,7 +14,7 @@ tamriel.pois[236] = { xN = 0.5565, yN = 0.474 }    -- Imperial City Prison
 tamriel.zones[16] = {
    textureFile = prefix.."/blobs/cyrodiil/blob-cyrodiil.dds",
    bounds = { xN = 0.44897, yN = 0.38818, widthN = 0.22326, heightN = 0.22326 },
-   data = {
+   hitbox = {
       { xN = 0.1232, yN = 0.0660, },
       { xN = 0.1222, yN = 0.0906, },
       { xN = 0.1113, yN = 0.0995, },
@@ -93,7 +93,7 @@ tamriel.zones[16] = {
 tamriel.zones[1006] = {
    textureFile = prefix.."/blobs/cyrodiil/blob-goldcoast.dds",
    bounds = { xN = 0.3209, yN = 0.51647, widthN = 0.1062, heightN = 0.1062 },
-   data = {
+   hitbox = {
       { xN = 0.3151, yN = 0.1040, },
       { xN = 0.2384, yN = 0.1516, },
       { xN = 0.2041, yN = 0.1886, },
@@ -127,7 +127,7 @@ tamriel.zones[1006] = {
 tamriel.zones[1887] = {
    textureFile = prefix.."/blobs/cyrodiil/blob-blackwood.dds",
    bounds = { xN = 0.5802, yN = 0.58557, widthN = 0.15954, heightN = 0.15954 },
-   data = {
+   hitbox = {
       { xN = 0.1072, yN = 0.0316, },
       { xN = 0.0951, yN = 0.1049, },
       { xN = 0.1684, yN = 0.1792, },
@@ -207,7 +207,7 @@ tamriel.zones[415] = {
    nameHidden = true,
    textureFile = prefix.."/blobs/cyrodiil/blob-stirk.dds",
    bounds = { xN = 0.31127, yN = 0.5708, widthN = 0.016723633, heightN = 0.016723633, },
-   data = {
+   hitbox = {
       { xN = 0.5130, yN = 0.0121, },
       { xN = 0.3333, yN = 0.1086, },
       { xN = 0.1208, yN = 0.3288, },
@@ -229,7 +229,7 @@ tamriel.zones[108] = {
    nameHidden = true,
    textureFile = prefix.."/blobs/cyrodiil/blob-eyevea.dds",
    bounds = { xN = 0.13671, yN = 0.58471, widthN = 0.019042969, heightN = 0.019042969},
-   data = {
+   hitbox = {
       { xN = 0.1507, yN = 0.1973, },
       { xN = 0.0441, yN = 0.4244, },
       { xN = 0.0475, yN = 0.5465, },
@@ -251,7 +251,7 @@ tamriel.zones[103] = {
    nameHidden = true,
    textureFile = prefix.."/blobs/cyrodiil/blob-earthforge.dds",
    bounds = { xN = 0.35253, yN = 0.29174, widthN = 0.01477, heightN = 0.01477, },
-   data = {
+   hitbox = {
       { xN = 0.6148, yN = 0.1143, },
       { xN = 0.5273, yN = 0.1056, },
       { xN = 0.3655, yN = 0.1580, },
@@ -273,7 +273,7 @@ tamriel.zones[1061] = {
    nameHidden = true,
    textureFile = prefix.."/blobs/cyrodiil/blob-blackwoodborderlands.dds",
    bounds = { xN = 0.71264, yN = 0.6455, widthN = 0.01867, heightN = 0.01867, },
-   data = {
+   hitbox = {
       { xN = 0.0681, yN = 0.2895, },
       { xN = 0.1097, yN = 0.3760, },
       { xN = 0.0924, yN = 0.4867, },
