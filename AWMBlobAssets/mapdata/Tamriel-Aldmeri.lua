@@ -1,7 +1,7 @@
 local theme = AWMBlobAssets
+local prefix = theme.prefix
 local maps = theme.maps
 local tamriel = maps[27]
-local prefix = theme.prefix
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---- Aldmeri Dominion -------- Aldmeri Dominion -------- Aldmeri Dominion -------- Aldmeri Dominion -------- Aldmeri Dominion -------- Aldmeri Dominion ----
@@ -290,34 +290,6 @@ tamriel.zones[292] = {
 }
 --]]
 
-----------------------
--- Jerall Mountains --
-tamriel.zones[1056] = {
-   nameHidden = true,
-   textureFile = prefix.."/blobs/ebonheart/blob-jerallmountains.dds",
-   bounds = { xN = 0.61584, yN = 0.40026, widthN = 0.01232, heightN = 0.01232, },
-   offsets = { yN = 0.00061 },
-   hitbox = {
-      { xN = 0.6880, yN = 0.0193, },
-      { xN = 0.5098, yN = 0.0560, },
-      { xN = 0.4101, yN = 0.2447, },
-      { xN = 0.3210, yN = 0.2867, },
-      { xN = 0.2214, yN = 0.2657, },
-      { xN = 0.1742, yN = 0.3496, },
-      { xN = 0.2109, yN = 0.6013, },
-      { xN = 0.0956, yN = 0.7428, },
-      { xN = 0.1218, yN = 0.8477, },
-      { xN = 0.2476, yN = 0.8267, },
-      { xN = 0.4154, yN = 0.8739, },
-      { xN = 0.6408, yN = 0.9787, },
-      { xN = 0.7509, yN = 0.9787, },
-      { xN = 0.8086, yN = 0.7376, },
-      { xN = 0.7457, yN = 0.6013, },
-      { xN = 0.7614, yN = 0.2814, },
-      { xN = 0.8715, yN = 0.0717, },
-      { xN = 0.8505, yN = 0.0245, },   
-   }
-}
 
 --------------------
 -- Summerset Isle --
@@ -370,13 +342,14 @@ tamriel.zones[1349] = {
    }
 }
 
+--[[
 ----------------------
 -- Wasten Coraldale --
 tamriel.zones[1469] = {
-   nameHidden = true,
    textureFile = prefix.."/blobs/aldmeri/blob-wastencoraldale.dds",
    bounds = { xN = 0.0168, yN = 0.7641, },
 }
+--]]
 
 ----------------------
 -- Northern Elsweyr --
@@ -423,7 +396,7 @@ tamriel.zones[1555] = {
 -----------------------
 -- Halls of Colossus --
 tamriel.zones[1588] = {
-   nameHidden = true,
+   disableZoneNames = true,
    textureFile = prefix.."/blobs/aldmeri/blob-hallsofcolossus.dds",
    bounds = { xN = 0.5194, yN = 0.74072, widthN = 0.015747, heightN = 0.015747, },
    offsets = { xN = 0.003051758, yN = 0.00402832, widthN = 0.005981445, heightN = 0.005981445, },

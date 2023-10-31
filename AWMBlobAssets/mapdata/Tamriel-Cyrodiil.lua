@@ -6,8 +6,8 @@ local prefix = theme.prefix
 
 -------------------
 -- Imperial City --
-tamriel.pois[247] = { xN = 0.5505, yN = 0.4865 }   -- White-Gold Tower
-tamriel.pois[236] = { xN = 0.5565, yN = 0.474 }    -- Imperial City Prison
+--tamriel.pois[247] = { xN = 0.5505, yN = 0.4865 }   -- White-Gold Tower
+--tamriel.pois[236] = { xN = 0.5565, yN = 0.474 }    -- Imperial City Prison
 
 --------------
 -- Cyrodiil --
@@ -204,7 +204,7 @@ tamriel.zones[1887] = {
 -----------
 -- Stirk --
 tamriel.zones[415] = {
-   nameHidden = true,
+   disableZoneNames = true,
    textureFile = prefix.."/blobs/cyrodiil/blob-stirk.dds",
    bounds = { xN = 0.31127, yN = 0.5708, widthN = 0.016723633, heightN = 0.016723633, },
    hitbox = {
@@ -223,10 +223,11 @@ tamriel.zones[415] = {
       { xN = 0.6229, yN = 0.0005, },   
    }
 }
+
 ------------
 -- Eyevea --
 tamriel.zones[108] = {
-   nameHidden = true,
+   disableZoneNames = true,
    textureFile = prefix.."/blobs/cyrodiil/blob-eyevea.dds",
    bounds = { xN = 0.13671, yN = 0.58471, widthN = 0.019042969, heightN = 0.019042969},
    hitbox = {
@@ -248,7 +249,7 @@ tamriel.zones[108] = {
 ----------------
 -- EarthForge --
 tamriel.zones[103] = {
-   nameHidden = true,
+   disableZoneNames = true,
    textureFile = prefix.."/blobs/cyrodiil/blob-earthforge.dds",
    bounds = { xN = 0.35253, yN = 0.29174, widthN = 0.01477, heightN = 0.01477, },
    hitbox = {
@@ -270,7 +271,7 @@ tamriel.zones[103] = {
 ---------------------------
 -- Blackwood Borderlands --
 tamriel.zones[1061] = {
-   nameHidden = true,
+   disableZoneNames = true,
    textureFile = prefix.."/blobs/cyrodiil/blob-blackwoodborderlands.dds",
    bounds = { xN = 0.71264, yN = 0.6455, widthN = 0.01867, heightN = 0.01867, },
    hitbox = {

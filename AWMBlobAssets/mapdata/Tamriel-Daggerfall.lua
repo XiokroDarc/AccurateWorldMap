@@ -486,7 +486,7 @@ tamriel.zones[667] = {
 -- Isle of Balfiera --
 --[[
 tamriel.zones[1997] = {
-   nameHidden = true,
+   namesHidden = true,
    blob = {
       textureFile = prefix.."/blobs/daggerfall/blob-balfiera.dds",
       bounds = { xN = 0.1535, yN = 0.3662, },
@@ -497,7 +497,7 @@ tamriel.zones[1997] = {
 --------------
 -- Grayhome --
 tamriel.zones[1864] = { 
-   nameHidden = true,
+   disableZoneNames = true,
    textureFile = prefix.."/blobs/daggerfall/blob-grayhome.dds",
    bounds = { xN = 0.30175, yN = 0.16748, widthN = 0.017578125, heightN = 0.017578125, },
    hitbox = {
@@ -545,7 +545,7 @@ tamriel.zones[2114] = {
 ------------------------
 -- Galen and Y'ffelon --
 tamriel.zones[2212] = {
-   nameHidden = true,
+   disableZoneNames = true,
    textureFile = prefix.."/blobs/daggerfall/blob-galen.dds",
    bounds = { xN = 0.047363, yN = 0.559326, widthN = 0.02172, heightN = 0.02172, },
    hitbox = { 
@@ -568,7 +568,7 @@ tamriel.zones[2212] = {
 ------------------------
 -- Sword's Rest Isle  --
 tamriel.zones[2143] = {
-   nameHidden = true,
+   disableZoneNames = true,
    textureFile = prefix.."/blobs/daggerfall/blob-swordsrestisle.dds",
    bounds = { xN = 0.09387, yN = 0.42419, widthN = 0.012329102, heightN = 0.012329102},
    hitbox = {

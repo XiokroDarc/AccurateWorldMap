@@ -277,7 +277,6 @@ tamriel.zones[125] = {
    storyIndex = 7,
    textureFile = prefix.."/blobs/ebonheart/blob-therift.dds",
    bounds = {  xN = 0.5499, yN = 0.3214, widthN = 0.1154785, heightN = 0.1154785, },
-   --bounds = {  xN = 0.52556, yN = 0.2970, },
    offsets = { xN = 0.00244, yN = 0.00244, },
    hitbox = {
       { xN = 0.0763, yN = 0.1665, },
@@ -324,10 +323,39 @@ tamriel.zones[125] = {
    }
 }
 
+----------------------
+-- Jerall Mountains --
+tamriel.zones[1056] = {
+   disableZoneNames = true,
+   textureFile = prefix.."/blobs/ebonheart/blob-jerallmountains.dds",
+   bounds = { xN = 0.61584, yN = 0.40026, widthN = 0.01232, heightN = 0.01232, },
+   offsets = { yN = 0.00061 },
+   hitbox = {
+      { xN = 0.6880, yN = 0.0193, },
+      { xN = 0.5098, yN = 0.0560, },
+      { xN = 0.4101, yN = 0.2447, },
+      { xN = 0.3210, yN = 0.2867, },
+      { xN = 0.2214, yN = 0.2657, },
+      { xN = 0.1742, yN = 0.3496, },
+      { xN = 0.2109, yN = 0.6013, },
+      { xN = 0.0956, yN = 0.7428, },
+      { xN = 0.1218, yN = 0.8477, },
+      { xN = 0.2476, yN = 0.8267, },
+      { xN = 0.4154, yN = 0.8739, },
+      { xN = 0.6408, yN = 0.9787, },
+      { xN = 0.7509, yN = 0.9787, },
+      { xN = 0.8086, yN = 0.7376, },
+      { xN = 0.7457, yN = 0.6013, },
+      { xN = 0.7614, yN = 0.2814, },
+      { xN = 0.8715, yN = 0.0717, },
+      { xN = 0.8505, yN = 0.0245, },   
+   }
+}
+
 ------------------------------
 -- Norg-Tzel / Swamp Island --
 tamriel.zones[1552] = {
-   nameHidden = true,
+   disableZoneNames = true,
    textureFile = prefix.."/blobs/ebonheart/blob-swampisland.dds",
    bounds = { xN = 0.802, yN = 0.78088, widthN = 0.01232, heightN = 0.01232, },
    hitbox = {
@@ -387,7 +415,7 @@ tamriel.zones[1060] = {
 --[[
 maps[1248] = { parentId = 27 }
 tamriel.zones[1248] = {
-   nameHidden = true,
+   namesHidden = true,
    blob = {
       textureFile = prefix.."/blobs/ebonheart/blob-firemothisland.dds",
       bounds = { xN = 0.7024, yN = 0.3831, },
@@ -539,7 +567,7 @@ maps[2004] = { parentId = 27, maxZoom = 5, }
 --maps[2004].pois[468] = { showInMap = true, xN = 0.312, yN = 0.15, } -- rockgrove
 tamriel.pois[468] = { xN = 0.705, yN = 0.765, }
 tamriel.zones[2004] = {
-   nameHidden = true,
+   namesHidden = true,
    blob = {
       textureFile = prefix.."/blobs/ebonheart/blob-rockgrove.dds",
       bounds = { xN = 0.6937, yN = 0.7609, },

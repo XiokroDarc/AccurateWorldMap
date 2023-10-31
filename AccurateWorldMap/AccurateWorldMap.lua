@@ -1,15 +1,11 @@
---local LMT = LibMapThemer
 local LAM = LibAddonMenu2
---local theme = AccurateWorldMap
-local themeName = "AccurateWorldMap"
-local theme = LibMapThemer:LoadTheme(_G[themeName])
+local theme = LibMapThemer:CreateTheme(_G["AccurateWorldMap"])
 
-local panelName = "AccurateWorldMap_Settings"
-local panelData = {
+local panelName, panelData = "AccurateWorldMap_Settings", {
    type = "panel",
-   name = "Accurate World Map",
-   displayName = "Accurate World Map",
-   author = "|C8587FF@Thal-J|r (EU) & |C7851A9@XiokroDarc|r (NA) & |C42ffbd@Vylaera|r (NA)",
+   name = theme:GetName(),
+   displayName = theme:GetDisplayName(),
+   author = theme:GetAuthor(),
    registerForRefresh = true,
    registerForDefaults = true,
    slashCommand = "/accurateworldmap",
@@ -26,142 +22,124 @@ local optionsData = {
       width = "full",
    },
    {
-      type = "dropdown",
-      name = "Map Theme",
-      tooltip = "Choose the map theme.",
-      warning = "Disable theme before uninstalling",
-      choices = LibMapThemer:GetThemesWithDependency(themeName),
-      getFunc = function() return LibMapThemer:GetCurrentThemeName() end,
-      setFunc = function(value) LibMapThemer:SetCurrentThemeByName(value) end,
-   },
-   
-
-   {
       type = "checkbox",
       name = "Show Tamriel Names",
       tooltip = "Show Tamriel zones names on the map",
-      getFunc = function() return theme:GetOptions().showTamrielZoneNames end,
-      setFunc = function(value) theme:GetOptions().showTamrielZoneNames = value end
+      getFunc = function ( ) return theme:GetOptions().tamrielZoneNames end,
+      setFunc = function ( value ) theme:GetOptions().tamrielZoneNames = value end
    },
    {
       type = "checkbox",
       name = "Show Aurbis Names",
       tooltip = "Show Aurbis zones names on the map",
-      getFunc = function() return theme:GetOptions().showAurbisZoneNames end,
-      setFunc = function(value) theme:GetOptions().showAurbisZoneNames = value end
+      getFunc = function ( ) return theme:GetOptions().aurbisZoneNames end,
+      setFunc = function (value) theme:GetOptions().aurbisZoneNames = value end
    },
    {
       type = "checkbox",
-      name = "Disable Renames",
-      warning = "May break some themes",
-      tooltip = "Disables renaming of zones",
-      getFunc = function() return theme:GetOptions().disableRenames end,
-      setFunc = function(value) theme:GetOptions().disableRenames = value end
+      name = "Show Renames",
+      tooltip = "Shows renaming of zones",
+      getFunc = function ( ) return theme:GetOptions().renames end,
+      setFunc = function (value) theme:GetOptions().renames = value end
    },
    {
       type = "checkbox",
-      name = "Zone Story Index",
-      tooltip = "Numbers story line zones",
-      getFunc = function() return theme:GetOptions().storyIndexes end,
-      setFunc = function(value) theme:GetOptions().storyIndexes = value end
-   },
-
-
-   {
-      type = "dropdown",
-      name = "Font Style",
-      tooltip = "Theme Font Style",
-      choices = LibMapThemer:GetZosFonts(),
-      getFunc = function() return theme:GetOptions().fontName end,
-      setFunc = function(value) theme:GetOptions().fontName = value end,
+      name = "Show Descriptions",
+      tooltip = "Show descriptions of zones",
+      getFunc = function ( ) return theme:GetOptions().mapDescriptions end,
+      setFunc = function (value) theme:GetOptions().mapDescriptions = value end
    },
    {
-      type = "slider",
-      name = "Font Size",
-      tooltip = "Theme Font Size",
-      min = 8, max = 54,
-      getFunc = function() return theme:GetOptions().fontSize end,
-      setFunc = function(value) theme:GetOptions().fontSize = LibMapThemer:ClampFont(value) end
+      type = "checkbox",
+      name = "Show Story Indexes",
+      tooltip = "Show optional story index tag",
+      getFunc = function ( ) return theme:GetOptions().storyIndexes end,
+      setFunc = function (value) theme:GetOptions().storyIndexes = value end
+   },
+   {
+      type = "checkbox",
+      name = "Disable POI Glow",
+      tooltip = "Disables glow around POI",
+      getFunc = function ( ) return theme:GetOptions().pois.disableGlow end,
+      setFunc = function (value) theme:GetOptions().pois.disableGlow = value end
    },
 
-
-   
+   {
+      type = "checkbox",
+      name = "Show All Pois",
+      warning = "Disable to use below options",
+      tooltip = "Shows all pins that are on the Tamriel map (default settings)",
+      getFunc = function ( ) return theme:GetOptions().showAllPois end,
+      setFunc = function (value) theme:GetOptions().showAllPois = value end
+   },
    {
       type = "header",
-      name = "Tamriel Fast Travel Nodes",
+      name = "Poi Visibility Settings",
       width = "full",
-   },
-   {
-      type = "checkbox",
-      name = "Show All",
-      warning = "Disable to use options",
-      tooltip = "Shows all pins that are on the Tamriel map",
-      getFunc = function() return theme:GetOptions().pois.showAll end,
-      setFunc = function(value) theme:GetOptions().pois.showAll = value end
    },
    {
       type = "checkbox",
       name = indent.."Show Major Settlements",
       tooltip = "Shows all major settlements on the map",
-      disabled = function() return theme:GetOptions().pois.showAll end,
-      getFunc = function() return theme:GetOptions().pois.majorSettlements end,
-      setFunc = function(value) theme:GetOptions().pois.majorSettlements = value end,
+      disabled = function ( ) return theme:GetOptions().showAllPois end,
+      getFunc = function ( ) return theme:GetOptions().pois.majorSettlements end,
+      setFunc = function (value) theme:GetOptions().pois.majorSettlements = value end,
    },
    {
       type = "checkbox",
       name = indent.."Show Guildtrader Shrines",
       tooltip = "Shows wayshrines next to guild traders on the map",
-      disabled = function() return theme:GetOptions().pois.showAll end,
-      getFunc = function() return theme:GetOptions().pois.guildShrines end,
-      setFunc = function(value) theme:GetOptions().pois.guildShrines = value end,
+      disabled = function ( ) return theme:GetOptions().showAllPois end,
+      getFunc = function ( ) return theme:GetOptions().pois.guildShrines end,
+      setFunc = function (value) theme:GetOptions().pois.guildShrines = value end,
    },
    {
       type = "checkbox",
       name = indent.."Show Owned Houses",
       tooltip = "Shows any house you own on the Tamriel map",
-      disabled = function() return theme:GetOptions().pois.showAll end,
-      getFunc = function() return theme:GetOptions().pois.ownedHouses end,
-      setFunc = function(value) theme:GetOptions().pois.ownedHouses = value end
+      disabled = function ( ) return theme:GetOptions().showAllPois end,
+      getFunc = function ( ) return theme:GetOptions().pois.ownedHouses end,
+      setFunc = function (value) theme:GetOptions().pois.ownedHouses = value end
    },
    {
       type = "checkbox",
       name = indent.."Show Unowned Houses",
       tooltip = "Shows any house you don't own on the Tamriel map",
-      disabled = function() return theme:GetOptions().pois.showAll end,
-      getFunc = function() return theme:GetOptions().pois.unownedHouses end,
-      setFunc = function(value) theme:GetOptions().pois.unownedHouses = value end
-   },
-   {
-      type = "checkbox",
-      name = indent.."Show Trials",
-      tooltip = "Shows found trials on the Tamriel map",
-      disabled = function() return theme:GetOptions().pois.showAll end,
-      getFunc = function() return theme:GetOptions().pois.trials end,
-      setFunc = function(value) theme:GetOptions().pois.trials = value end
-   },
-   {
-      type = "checkbox",
-      name = indent.."Show Dungeons",
-      tooltip = "Shows found dungeons on the Tamriel map",
-      disabled = function() return theme:GetOptions().pois.showAll end,
-      getFunc = function() return theme:GetOptions().pois.dungeons end,
-      setFunc = function(value) theme:GetOptions().pois.dungeons = value end
-   },
-   {
-      type = "checkbox",
-      name = indent.."Show Group Arenas",
-      tooltip = "Shows 4 man arenas",
-      disabled = function() return theme:GetOptions().pois.showAll end,
-      getFunc = function() return theme:GetOptions().pois.groupArenas end,
-      setFunc = function(value) theme:GetOptions().pois.groupArenas = value end,
+      disabled = function ( ) return theme:GetOptions().showAllPois end,
+      getFunc = function ( ) return theme:GetOptions().pois.unownedHouses end,
+      setFunc = function (value) theme:GetOptions().pois.unownedHouses = value end
    },
    {
       type = "checkbox",
       name = indent.."Show Solo Arenas",
       tooltip = "Shows solo arenas",
-      disabled = function() return theme:GetOptions().pois.showAll end,
-      getFunc = function() return theme:GetOptions().pois.soloArenas end,
-      setFunc = function(value) theme:GetOptions().pois.soloArenas = value end,
+      disabled = function ( ) return theme:GetOptions().showAllPois end,
+      getFunc = function ( ) return theme:GetOptions().pois.soloArenas end,
+      setFunc = function (value) theme:GetOptions().pois.soloArenas = value end,
+   },
+   {
+      type = "checkbox",
+      name = indent.."Show Group Arenas",
+      tooltip = "Shows 4 man arenas",
+      disabled = function ( ) return theme:GetOptions().showAllPois end,
+      getFunc = function ( ) return theme:GetOptions().pois.groupArenas end,
+      setFunc = function (value) theme:GetOptions().pois.groupArenas = value end,
+   },
+   {
+      type = "checkbox",
+      name = indent.."Show Dungeons",
+      tooltip = "Shows found dungeons on the Tamriel map",
+      disabled = function ( ) return theme:GetOptions().showAllPois end,
+      getFunc = function ( ) return theme:GetOptions().pois.dungeons end,
+      setFunc = function (value) theme:GetOptions().pois.dungeons = value end
+   },
+   {
+      type = "checkbox",
+      name = indent.."Show Trials",
+      tooltip = "Shows found trials on the Tamriel map",
+      disabled = function ( ) return theme:GetOptions().showAllPois end,
+      getFunc = function ( ) return theme:GetOptions().pois.trials end,
+      setFunc = function (value) theme:GetOptions().pois.trials = value end
    },
 }
 
@@ -170,14 +148,5 @@ EVENT_MANAGER:RegisterForEvent(theme:GetName(), EVENT_ADD_ON_LOADED, function (_
    EVENT_MANAGER:UnregisterForEvent(addonName, EVENT_ADD_ON_LOADED)
    LAM:RegisterAddonPanel(panelName, panelData)
    LAM:RegisterOptionControls(panelName, optionsData)
-   LibMapThemer:SetCurrentThemeByName(theme:GetName())
-end)
-
-CALLBACK_MANAGER:RegisterCallback("OnWorldMapChanged", function()
-   theme:SetRenamesDisabled(theme:GetOptions().disableRenames)
-   local map = theme:GetCurrentMap()
-   if (map) then 
-      if (map:GetMapId() == 27)  then map:SetNameVisibility(theme:GetOptions().showTamrielZoneNames) end
-      if (map:GetMapId() == 439) then map:SetNameVisibility(theme:GetOptions().showAurbisZoneNames) end
-   end
+   theme:EnableIfAvailable()
 end)

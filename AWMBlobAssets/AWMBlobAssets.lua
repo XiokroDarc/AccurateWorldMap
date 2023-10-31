@@ -1,10 +1,12 @@
-AWMBlobAssets = {
-  name = "AWMBlobAssets",
+local themeName = "AWMBlobAssets"
+
+_G[themeName] = {
+  name = themeName,
   prefix = "AccurateWorldMap/AWMBlobAssets",
-  dependencies = { LibMapThemer_DataMerge },
+  dependencies = { LibMapThemer_Core },
   maps = { },
 }
-local theme = AWMBlobAssets
+local theme = _G[themeName]
 local maps = theme.maps
 
 -------------
@@ -12,10 +14,8 @@ local maps = theme.maps
 maps[27] = { 
    zones = { }, 
    pois = { }, 
-   maxZoom = 48, 
-   namesVisible = true, 
 }
 
 ------------
 -- AURBIS --
-maps[439] = { zones = { }, maxZoom = 4, }
+maps[439] = { zones = { } }
