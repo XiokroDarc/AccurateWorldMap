@@ -18,4 +18,7 @@ maps[27] = {
 
 ------------
 -- AURBIS --
-maps[439] = { zones = { } }
+maps[439] = { 
+   customMaxZoom = 6,
+   zones = { }, 
+}

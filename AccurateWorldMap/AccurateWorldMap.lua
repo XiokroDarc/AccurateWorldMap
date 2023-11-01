@@ -60,8 +60,8 @@ local optionsData = {
       type = "checkbox",
       name = "Disable POI Glow",
       tooltip = "Disables glow around POI",
-      getFunc = function ( ) return theme:GetOptions().pois.disableGlow end,
-      setFunc = function (value) theme:GetOptions().pois.disableGlow = value end
+      getFunc = function ( ) return theme:GetOptions().pois.disablePoiGlow end,
+      setFunc = function (value) theme:GetOptions().pois.disablePoiGlow = value end
    },
 
    {
