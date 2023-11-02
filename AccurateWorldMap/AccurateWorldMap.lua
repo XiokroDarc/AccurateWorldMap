@@ -23,6 +23,13 @@ local optionsData = {
    },
    {
       type = "checkbox",
+      name = "Show Aurbis Names",
+      tooltip = "Show Aurbis zones names on the map",
+      getFunc = function ( ) return theme:GetOptions().aurbisZoneNames end,
+      setFunc = function (value) theme:GetOptions().aurbisZoneNames = value end
+   },   
+   {
+      type = "checkbox",
       name = "Show Tamriel Names",
       tooltip = "Show Tamriel zones names on the map",
       getFunc = function ( ) return theme:GetOptions().tamrielZoneNames end,
@@ -30,10 +37,11 @@ local optionsData = {
    },
    {
       type = "checkbox",
-      name = "Show Aurbis Names",
-      tooltip = "Show Aurbis zones names on the map",
-      getFunc = function ( ) return theme:GetOptions().aurbisZoneNames end,
-      setFunc = function (value) theme:GetOptions().aurbisZoneNames = value end
+      name = "Show Story Indexes",
+      tooltip = "Show optional story index tag",
+      disabled = function ( ) return not theme:GetOptions().tamrielZoneNames end,
+      getFunc = function ( ) return theme:GetOptions().storyIndexes end,
+      setFunc = function (value) theme:GetOptions().storyIndexes = value end
    },
    {
       type = "checkbox",
@@ -49,13 +57,7 @@ local optionsData = {
       getFunc = function ( ) return theme:GetOptions().mapDescriptions end,
       setFunc = function (value) theme:GetOptions().mapDescriptions = value end
    },
-   {
-      type = "checkbox",
-      name = "Show Story Indexes",
-      tooltip = "Show optional story index tag",
-      getFunc = function ( ) return theme:GetOptions().storyIndexes end,
-      setFunc = function (value) theme:GetOptions().storyIndexes = value end
-   },
+
    {
       type = "checkbox",
       name = "Disable POI Glow",

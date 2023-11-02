@@ -8,7 +8,7 @@
 ## Author: |C7851A9@XiokroDarc|r (NA) & |C42ffbd@Vylaera|r (NA)
 ## Version: 1.0
 ## APIVersion: 101039 101040
-## DependsOn: LibMapThemer
+;## DependsOn: LibMapThemer
 ## IsLibrary: true
 
 AWMBlobAssets.lua

@@ -5,9 +5,9 @@ _G[ themeName ] = {
    name = themeName,
    displayName = "Accurate World Map",
    author = "|C8587FF@Thal-J|r (EU) & |C7851A9@XiokroDarc|r & |C42ffbd@Vylaera|r (NA)",
-   version = 2310310217,
+   version = 2311010210,
    prefix = "AccurateWorldMap/AccurateWorldMap",
-   dependencies = { AWMBlobAssets },
+   dependencies = { LibMapThemer_Core, AWMBlobAssets },
    maps = { },
    renames = { },
    mapDescriptions = { },
@@ -85,13 +85,20 @@ callbacks[ "OnWorldMapChanged" ] = function ( self )
    AWM_MouseOverGrungeTex:ClearAnchors()
    AWM_MouseOverGrungeTex:SetAnchor( TOPLEFT, ZO_WorldMap, TOPLEFT, 0, 0 )
    AWM_MouseOverGrungeTex:SetDimensions( mapWidth, mapHeight )
+   AWM_MouseOverGrungeTex:SetHidden( true )
 end
 
 --]]
 
+local function IsMouseWithinMapWindow()
+   local mouseOverControl = WINDOW_MANAGER:GetMouseOverControl()
+   return (not ZO_WorldMapContainer:IsHidden() and (mouseOverControl == ZO_WorldMapContainer or mouseOverControl:GetParent() == ZO_WorldMapContainer))
+end
+ 
 overrides[ "GetMapMouseoverInfo" ] = function ( self, output, ... ) 
    output = _G[ "LibMapThemer_Overrides" ][ "overrides" ][ "GetMapMouseoverInfo" ]( self, output, ... )
-   AWM_MouseOverGrungeTex:SetHidden( not output[1] or output[1] == '' )
+   local hidden = ( not output[1] or output[1] == '' ) and IsMouseWithinMapWindow()
+   AWM_MouseOverGrungeTex:SetHidden( hidden )
    return output
 end
 ---[[

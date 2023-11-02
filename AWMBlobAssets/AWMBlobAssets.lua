@@ -3,7 +3,7 @@ local themeName = "AWMBlobAssets"
 _G[themeName] = {
   name = themeName,
   prefix = "AccurateWorldMap/AWMBlobAssets",
-  dependencies = { LibMapThemer_Core },
+  --dependencies = { LibMapThemer_Core },
   maps = { },
 }
 local theme = _G[themeName]
