@@ -5,7 +5,7 @@ _G[ themeName ] = {
    name = themeName,
    displayName = "Accurate World Map",
    author = "|C8587FF@Thal-J|r (EU) & |C7851A9@XiokroDarc|r & |C42ffbd@Vylaera|r (NA)",
-   version = 2311010210,
+   version = 2311030011,
    prefix = "AccurateWorldMap/AccurateWorldMap",
    dependencies = { LibMapThemer_Core, AWMBlobAssets },
    maps = { },
@@ -22,6 +22,7 @@ _G[ themeName ] = {
       renames = true,
       mapDescriptions = true,
       storyIndexes = false,
+      hoverFadeEffect = true,
       disablePoiGlow = false,
       showAllPois = true,
       pois = {
@@ -44,7 +45,6 @@ _G[ themeName ] = {
    ["IsStoryIndexesEnabled"] = function ( self )
       return self:GetOptions().storyIndexes
    end,
-   --disableZoneNames = true,
 }
 local theme = _G[ themeName ]
 local prefix = theme.prefix
@@ -89,16 +89,11 @@ callbacks[ "OnWorldMapChanged" ] = function ( self )
 end
 
 --]]
-
-local function IsMouseWithinMapWindow()
-   local mouseOverControl = WINDOW_MANAGER:GetMouseOverControl()
-   return (not ZO_WorldMapContainer:IsHidden() and (mouseOverControl == ZO_WorldMapContainer or mouseOverControl:GetParent() == ZO_WorldMapContainer))
-end
  
 overrides[ "GetMapMouseoverInfo" ] = function ( self, output, ... ) 
    output = _G[ "LibMapThemer_Overrides" ][ "overrides" ][ "GetMapMouseoverInfo" ]( self, output, ... )
-   local hidden = ( not output[1] or output[1] == '' ) and IsMouseWithinMapWindow()
-   AWM_MouseOverGrungeTex:SetHidden( hidden )
+   local visible = self:GetOptions().hoverFadeEffect and output[1] and output[1] ~= ''
+   AWM_MouseOverGrungeTex:SetHidden( not visible )
    return output
 end
 ---[[

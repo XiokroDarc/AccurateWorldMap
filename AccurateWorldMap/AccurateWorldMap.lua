@@ -57,7 +57,13 @@ local optionsData = {
       getFunc = function ( ) return theme:GetOptions().mapDescriptions end,
       setFunc = function (value) theme:GetOptions().mapDescriptions = value end
    },
-
+   {
+      type = "checkbox",
+      name = "Show Zone Hover Fades",
+      tooltip = "Show a fade when hovering over the map",
+      getFunc = function ( ) return theme:GetOptions().hoverFadeEffect end,
+      setFunc = function (value) theme:GetOptions().hoverFadeEffect = value end
+   },
    {
       type = "checkbox",
       name = "Disable POI Glow",
