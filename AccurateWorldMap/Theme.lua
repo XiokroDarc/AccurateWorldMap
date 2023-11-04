@@ -87,12 +87,11 @@ callbacks[ "OnWorldMapChanged" ] = function ( self )
    AWM_MouseOverGrungeTex:SetDimensions( mapWidth, mapHeight )
    AWM_MouseOverGrungeTex:SetHidden( true )
 end
-
 --]]
  
 overrides[ "GetMapMouseoverInfo" ] = function ( self, output, ... ) 
    output = _G[ "LibMapThemer_Overrides" ][ "overrides" ][ "GetMapMouseoverInfo" ]( self, output, ... )
-   local visible = self:GetOptions().hoverFadeEffect and output[1] and output[1] ~= ''
+   local visible = (self:GetOptions().hoverFadeEffect and output[1] and output[1] ~= '') --or AWM_MouseOverGrungeTex:GetText() ~= ''
    AWM_MouseOverGrungeTex:SetHidden( not visible )
    return output
 end
