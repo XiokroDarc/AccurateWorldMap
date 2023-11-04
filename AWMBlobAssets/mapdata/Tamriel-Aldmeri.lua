@@ -507,13 +507,17 @@ tamriel.zones[1654] = {
 
 --------------
 -- Tideholm --
---[[
-maps[1684] = { parentId = 27 }
+---[[
+maps[1684] = { parentMapId = 27 }
 tamriel.zones[1684] = {
-   hideName = true,
-   blob = {
-      textureFile = prefix.."/blobs/aldmeri/blob-tideholm.dds",
-      bounds = { xN = 0.6149, yN = 0.80 },
+   disableZoneNames = true,
+   textureFile = prefix.."/blobs/aldmeri/blob-tideholm.dds",
+   bounds = { xN = 0.623, yN = 0.7666, widthN = 0.007, heightN = 0.007 },
+   hitbox = {
+      { xN = 0.000, yN = 0.000 },
+      { xN = 0.000, yN = 0.999 },
+      { xN = 0.999, yN = 0.999 },
+      { xN = 0.999, yN = 0.000 },
    },
 }
 --]]
