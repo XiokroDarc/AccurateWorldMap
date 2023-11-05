@@ -61,7 +61,7 @@ tamriel.zones[7] = {
    faction = "EP",
    storyIndex = 3,
    textureFile = prefix.."/blobs/ebonheart/blob-stonefalls.dds",
-   bounds = { xN = 0.6866, yN = 0.3862, widthN = 0.126586, heightN = 0.126586, },
+   bounds = { xN = 0.686, yN = 0.3862, widthN = 0.126586, heightN = 0.126586, },
    hitbox = {
       { xN = 0.1894, yN = 0.1431, },
       { xN = 0.0963, yN = 0.1908, },
@@ -130,7 +130,7 @@ tamriel.zones[13] = {
    faction = "EP",
    storyIndex = 4,
    textureFile = prefix.."/blobs/ebonheart/blob-deshaan.dds",
-   bounds = { xN = 0.716186, yN = 0.4359, widthN = 0.14526, heightN = 0.14526, },
+   bounds = { xN = 0.716186, yN = 0.435, widthN = 0.14526, heightN = 0.14526, },
    hitbox = {
       { xN = 0.0193, yN = 0.3963, },
       { xN = 0.0018, yN = 0.4453, },

@@ -45,6 +45,7 @@ _G[ themeName ] = {
    ["IsStoryIndexesEnabled"] = function ( self )
       return self:GetOptions().storyIndexes
    end,
+   zoneColors = { 0, 1, 0, 1 }
 }
 local theme = _G[ themeName ]
 local prefix = theme.prefix
