@@ -10,8 +10,6 @@ local panelName, panelData = "AccurateWorldMap_Settings", {
    registerForDefaults = true,
    slashCommand = "/accurateworldmap",
    website = "https://www.esoui.com/downloads/info3377-AccurateWorldMap.html#info",
-   --feedback = "https://www.esoui.com/portal.php?id=XXX&a=bugreport",
-   --donation = "",
 }
 
 local indent = "    "
