@@ -101,13 +101,13 @@ renames[ "Northern Elsweyr" ]    = "Anequina"
 renames[ "Southern Elsweyr" ]    = "Pellitine"
 renames[ "Telvanni Peninsula" ]  = "Indoril Highlands"
 renames[ "Clockwork City" ]      = "The Clockwork City"
-renames[ "High Isle and Amenos" ]= "High Isle"  
+renames[ "High Isle and Amenos" ]= "High Isle"
 --]]
 
 -- TODO ADD NECROM DESCRIPTIONS
 ---[[
 mapDescriptions[ "Apocrypha" ] = "Hermaeus Mora's infinite realm of forbidden knowledge is described as a turbulent mire, glistening against the writhing brightness of a green sky, where every tome reveals secrets damning and inhumane, catalogued in chaos."
-mapDescriptions[ "Telvanni Peninsula" ] = "This region, also known as Alguradan, is the traditional homeland of Morrowind's Great House Indoril. Many Dunmer pilgrims travel this land, to pay respect at the City of the Dead, Necrom."
+mapDescriptions[ "Telvanni Peninsula" ] = "This region, also known as the Central Highlands, is the traditional homeland of Morrowind's Great House Indoril. Many Dunmer pilgrims travel this land, to pay respect at the City of the Dead, Necrom."
 mapDescriptions[ "Stirk" ] = "In the past, the lonesome island of Stirk has claimed by Valenwood, the Gold Coast, Hammerfell, and even the Ayleids. Now though, it's no-man's-land."
 mapDescriptions[ "Galen" ] = "Galen is the westernmost island of the Systres archipelago, controlled by House Monard. Galen has been the home of the druids for thousands of years after their voluntary exile from High Rock."
 mapDescriptions[ "Eyevea" ]   = "Originally an island belonging to the Summerset Isles, Eyevea now serves as the home of the Mages Guild."
