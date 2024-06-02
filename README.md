@@ -54,21 +54,22 @@ Required by libraries that this addon or LMT uses
 Many addons that add pins to vanilla locations on the world map are not compatible, this is because Accurate World Map moves zones and pins from their vanilla locations and those addons require vanilla positioning.
 
 #### Compatible
-- TrueExploration by Shinni
-- DarkUI by Sharlikran
 - Map Pins by Hoft
+- DarkUI by Sharlikran
+- Destinations by Sharlikran
+- Lost Treasure by Sharlikran
+- Skyshards by Assembler Maniac
+- TrueExploration by Shinni
+- Most of Votan's Mods***
 - Any addon that doesn't effect the map or wayshrines
 
 #### Partial Compatibility / Unknown
-- Votan's Improved Locations by Votan
-- More that idk about
+- LoreBooks by Kyoma (Eidetic Memory Books don't work)
+- More thatm idk about
 
 #### Not Compatible
-- GuildShrines by Valve (the user not the company)
-- LoreBooks by Kyoma
-- Skyshards by Assembler Maniac
-- Destinations by Sharlikran
-- Lost Treasurew by Sharlikran
+- GuildShrines (This addon sorta already does that)
+- Votan's Tamriel Map (Just outright wont work correctly)
 - Any addon that effects the map or wayshrines in any major way
 
 ## Known Issues
@@ -79,7 +80,8 @@ Many addons that add pins to vanilla locations on the world map are not compatib
 ## Thanks To
 - Vylaera & Thal-J for initially creating the addon
 - Highly Detailed World Map for the initial spark of map addons
-- Anybody who initial help with AccurateWorldMap
+- Anybody who initially helped with AccurateWorldMap
+- The ESO Community as a whole for being fantastic
 
 ## Maintained By
 <p align="center">
