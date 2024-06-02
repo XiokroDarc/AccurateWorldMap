@@ -28,6 +28,7 @@ Originally made by Vylaera & Thal-J, now maintained by Xiokro (me)
 - Any bugs found in general should be reported to me and not Thal-J or Vylaera
 
 ## Installation
+- Make Sure ESO is closed, the theme may not fully load if ESO is running, even after a /reloadui
 - Make sure you have [LibMapThemer](https://github.com/XiokroDarc/LibMapThemer) installed
 - Install addon into ESO addon directory
 - Enjoy
@@ -36,9 +37,7 @@ Originally made by Vylaera & Thal-J, now maintained by Xiokro (me)
 - After installing, the world map will be completely different and almost nothing will be in the same place as before. This is intentional, and may/will break many addons that rely on the placement of the wayshrines.
 - Player icons may not align correctly on the world map. This is not a game breaking feature, however until a reliable solution is found, the bug will remain.
 
-
 ## Compatibility
-
 Many addons that add pins to vanilla locations on the world map are not compatible, this is because Accurate World Map moves zones and pins from their vanilla locations and those addons require vanilla positioning.
 
 #### Compatible
@@ -53,6 +52,11 @@ Many addons that add pins to vanilla locations on the world map are not compatib
 #### Not Compatible
 - GuildShrines
 - Any addon that effects the map or wayshrines in any major way
+
+## Known Issues
+- PvP battle marks dont respect map changes, this is a LibMapThemer issue
+- Various markers may appear in incorrect locations, all these are known and being worked on.
+- English only for descriptions and renames.
 
 ## Thanks To
 - Vylaera & Thal-J for initially creating the addon
