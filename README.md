@@ -1,5 +1,4 @@
 # Accurate World Map : Gold Road Edition
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/XiokroDarc/AccurateWorldMap/main/previews/Banner.png" width="800">
 </p>
@@ -9,12 +8,13 @@ Accurate World Map : Gold Road Edition is an addon for the Elder Scrolls Online 
 Originally made by Vylaera & Thal-J, now reworked and maintained by Xiokro (me)
 
 ## Features
-
-- Lore Friendly, vanilla-style map
-- Locations relocated to lore accurate place
+- 8k resolution, vanilla-style map
+- Lore friendly zone placements
 - Lore accurate renames of zones
 - Descriptions for various zones
 - Wayshrine visibility toggle
+- Dungeon/Trial visibility toggle
+- Owned/Unowned House visibility toggle
 - Display zone names on map
 
 ## Comparison
