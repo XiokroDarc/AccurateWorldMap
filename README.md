@@ -63,7 +63,7 @@ Many addons that add pins to vanilla locations on the world map are not compatib
 
 #### Partial Compatibility / Unknown
 - LoreBooks by Kyoma (Eidetic Memory Books don't work)
-- More thatm idk about
+- More that idk about
 
 #### Not Compatible
 - GuildShrines (This addon sorta already does that)
