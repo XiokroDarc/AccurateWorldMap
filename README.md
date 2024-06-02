@@ -30,6 +30,7 @@ Originally made by Vylaera & Thal-J, now reworked and maintained by Xiokro (me)
 ## Dependencies
 #### Hard Requirements
 Required directly by either AWM or LMT
+- [LibAddonMenu-2.0](https://www.esoui.com/downloads/info7-LibAddonMenu-2.0.html)
 - [LibMapThemer](https://github.com/XiokroDarc/LibMapThemer)
 - [LibGPS](https://www.esoui.com/downloads/info601-LibGPS.html)
 - [LibZone](https://www.esoui.com/downloads/info2171-LibZone.html)
