@@ -1,0 +1,28 @@
+;This Add-on is not created by, affiliated with or sponsored by ZeniMax Media Inc. or its affiliates.
+;The Elder Scrolls® and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the United States and/or other countries.
+;All rights reserved.
+
+
+## Title: Accurate World Map |t32:32:AccurateWorldMap/misc/map.dds|t
+## Description: Accurate World Map replaces the in-game world maps with higher quality and more lore accurate ones.
+## Author: |C8587FF@Thal-J|r (EU) & |C42ffbd@Vylaera|r & |C7851A9@XiokroDarc|r (NA)  
+## DependsOn: LibMapThemer LibAddonMenu-2.0
+## Version: 2.1.0
+## APIVersion: 101039 101040
+
+Theme.lua
+
+blobs/aurbis/mapdata.lua
+blobs/cyrodiil/mapdata.lua
+
+blobs/daggerfall/mapdata.lua
+blobs/ebonheart/mapdata.lua
+blobs/aldmeri/mapdata.lua
+
+blobs/islands/mapdata.lua
+blobs/misc/mapdata.lua
+
+blobs/chapters/mapdata.lua
+blobs/dlc/mapdata.lua
+
+AccurateWorldMap.lua
