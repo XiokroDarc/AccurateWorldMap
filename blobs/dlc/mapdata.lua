@@ -225,7 +225,7 @@ tamriel.zones[1484] = {
 tamriel.zones[1654] = {
    textureFile = prefix..subfolder.."blob-southernelsweyr.dds",
    bounds = { xN = 0.50244, yN = 0.66833, widthN = 0.12878, heightN = 0.12878, },
-   offsets = { xN = 0.0128, yN = 0.008, }, -- Mr Bond
+   offsets = { xN = 0.0128, yN = 0.008, },
    hitbox = { 
       { xN = 0.0338, yN = 0.2343, },
       { xN = 0.1254, yN = 0.4359, },
