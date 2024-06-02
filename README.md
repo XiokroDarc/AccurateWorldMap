@@ -19,8 +19,8 @@ Originally made by Vylaera & Thal-J, now maintained by Xiokro (me)
 
 ## Comparison
 <p align="center">
-<img src="https://cdn.discordapp.com/attachments/1246772857883594812/1246795353483640862/Comparison.gif?ex=665db028&is=665c5ea8&hm=1180f97ef8a05a80f553dec466a1ef597fd8f4d7531576afc71a226a9a4e5326&" width="500">
-  <img src="https://media.discordapp.net/attachments/1246772857883594812/1246794458478153738/Comparison.gif?ex=665daf53&is=665c5dd3&hm=727f8127b38099e641e4f5491ba2e562afc4d57aa0fe80663699cd4e837b6618" width="500">
+<img src="https://raw.githubusercontent.com/XiokroDarc/AccurateWorldMap/main/previews/Comparison_Aurbis.gif" width="500">
+  <img src="https://raw.githubusercontent.com/XiokroDarc/AccurateWorldMap/main/previews/Comparison_Tamriel.gif" width="500">
 </p>
 
 ## Before Installing Notes
