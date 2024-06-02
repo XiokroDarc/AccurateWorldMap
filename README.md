@@ -6,7 +6,7 @@
 
 Accurate World Map : Gold Road Edition is an addon for the Elder Scrolls Online (ESO) that replaces the in-game world map with a higher quality, and more lore accurate one.
 
-Originally made by Vylaera & Thal-J, now maintained by Xiokro (me)
+Originally made by Vylaera & Thal-J, now reworked and maintained by Xiokro (me)
 
 ## Features
 
