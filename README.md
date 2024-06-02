@@ -58,7 +58,7 @@ Many addons that add pins to vanilla locations on the world map are not compatib
 - Lost Treasure by Sharlikran
 - Skyshards by Assembler Maniac
 - TrueExploration by Shinni
-- Most of Votan's Mods***
+- Most of Votan's Mods**
 - Any addon that doesn't effect the map or wayshrines
 
 #### Partial Compatibility / Unknown
@@ -67,7 +67,7 @@ Many addons that add pins to vanilla locations on the world map are not compatib
 
 #### Not Compatible
 - GuildShrines (This addon sorta already does that)
-- Votan's Tamriel Map (Just outright wont work correctly)
+- **Votan's Tamriel Map (Just outright wont work correctly)
 - Any addon that effects the map or wayshrines in any major way
 
 ## Known Issues
