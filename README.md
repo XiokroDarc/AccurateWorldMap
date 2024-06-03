@@ -4,7 +4,6 @@
 </p>
 
 Accurate World Map : Gold Road Edition is an addon for the Elder Scrolls Online (ESO) that replaces the in-game world map with a higher quality, and more lore accurate one.
-
 Originally made by Vylaera & Thal-J, now reworked and maintained by Xiokro (me)
 
 ## Features
@@ -43,10 +42,10 @@ Required by libraries that this addon or LMT uses
 - [LibDebugLogger](https://www.esoui.com/downloads/info2275-LibDebugLogger.html)
 
 ## Installation
-- Make Sure ESO is closed, the theme may not fully load if ESO is running, even after a /reloadui
+- Make sure ESO is closed, the theme may not fully load if ESO is running, even after a /reloadui
 - Make sure you have [LibMapThemer](https://github.com/XiokroDarc/LibMapThemer) and their dependencies installed
 - Install addon into ESO addon directory
-- Enjoy
+- Enjoy!
 
 ## Compatibility
 Many addons that add pins to vanilla locations on the world map are not compatible, this is because Accurate World Map moves zones and pins from their vanilla locations and those addons require vanilla positioning.
@@ -72,15 +71,15 @@ Many addons that add pins to vanilla locations on the world map are not compatib
 
 ## Known Issues
 - PvP battle marks dont respect map changes, this is a LibMapThemer issue
-- Various markers may appear in incorrect locations, all these are known and being worked on.
+- Various markers may appear in. incorrect locations, all these are known and being worked on.
 - English only for descriptions and renames.
 - Player icons may not align correctly on the world map. This is not a game breaking feature, however until a reliable solution is found, the bug will remain.
 
 ## Thanks To
-- Vylaera & Thal-J for initially creating the addon
-- Highly Detailed World Map for the initial spark of map addons
-- Anybody who initially helped with AccurateWorldMap
-- The ESO Community as a whole for being fantastic
+- Vylaera & Thal-J for initially creating the addon.
+- Highly Detailed World Map for the initial spark of map addons.
+- Anybody who initially helped with AccurateWorldMap.
+- The ESO Community as a whole for being fantastic.
 
 ## Maintained By
 <p align="center">
