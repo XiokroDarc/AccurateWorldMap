@@ -15,6 +15,7 @@ Originally made by Vylaera & Thal-J, now reworked and maintained by Xiokro (me)
 - Dungeon/Trial visibility toggle
 - Owned/Unowned House visibility toggle
 - Display zone names on map
+- The ability to see IC Sewers without being in instance
 
 ## Comparison
 <p align="center">
