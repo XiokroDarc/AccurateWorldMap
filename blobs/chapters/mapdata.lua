@@ -360,7 +360,9 @@ tamriel.zones[2427] = {
    name = "West Weald",
    textureFile = prefix..subfolder.."blob-westweald.dds",
    bounds = { xN = 0.3242, yN = 0.395, widthN = 0.2118, heightN = 0.2118, },
-   offsets = { xN = 0.015, yN = 0.01, widthN = -0.045, },
+   offsets = { xN = 0.02, yN = 0.00, widthN = -0.05, heightN = 0.001 },
+   --offsets = { xN = 0.019, yN = 0.001, widthN = -0.09, heightN = 0.000 },
+   --offsets = { xN = 0.015, yN = 0.01, widthN = -0.045, },
    hitbox = {
       { xN = 0.1379, yN = 0.6283, },
       { xN = 0.1593, yN = 0.6608, },
