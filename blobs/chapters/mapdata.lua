@@ -96,7 +96,8 @@ tamriel.zones[1349] = {
 tamriel.zones[1555] = {
    textureFile = prefix..subfolder.."blob-northernelsweyr.dds",
    bounds = { xN = 0.477416, yN = 0.58776, widthN = 0.132812, heightN = 0.132812, },
-   offsets = { xN = 0.006591 },
+   offsets = { xN = -0.003, yN = -0.0067, widthN = 0.01, heightN = 0.01 },
+   --offsets = { xN = 0.006591 },
    hitbox = {
       { xN = 0.3986, yN = 0.0969, },
       { xN = 0.2857, yN = 0.1560, },
